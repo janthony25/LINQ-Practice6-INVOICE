@@ -10,5 +10,9 @@ namespace LINQ_Practice6.Models
         public int Quantity { get; set; }
         public decimal ItemPrice { get; set; }
         public decimal LaborPrice { get; set; }
+
+        // FOREIGN KEY to tblInvoice
+        public int InvoiceId { get; set; }
+        public tblInvoice tblInvoice { get; set; }
     }
 }

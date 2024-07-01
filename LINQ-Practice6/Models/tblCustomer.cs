@@ -10,5 +10,7 @@ namespace LINQ_Practice6.Models
         public string CustomerName { get; set; }
         public string CustomerEmail { get; set; }
         public string PaymentStatus { get; set; }
+
+        public ICollection<tblInvoice> tblInvoice { get; set; }
     }
 }

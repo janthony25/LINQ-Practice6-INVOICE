@@ -14,5 +14,12 @@ namespace LINQ_Practice6.Models
         public decimal? Discount { get; set; }
         public decimal? ShippingFee { get; set; }
         public decimal? TotalAmount { get; set; }
+
+        // Foreign key to tblCustomer
+        public string CarRego { get; set; }
+        public tblCustomer tblCustomer { get; set; }
+
+        // has many InvoiceItem
+        public ICollection<tblInvoiceItem> tblInvoiceItem { get; set; }
     }
 }
