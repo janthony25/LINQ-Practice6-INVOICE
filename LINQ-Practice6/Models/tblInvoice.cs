@@ -17,9 +17,9 @@ namespace LINQ_Practice6.Models
 
         // Foreign key to tblCustomer
         public string CarRego { get; set; }
-        public tblCustomer tblCustomer { get; set; }
+        public tblCustomer? tblCustomer { get; set; }
 
         // has many InvoiceItem
-        public ICollection<tblInvoiceItem> tblInvoiceItem { get; set; }
+        public ICollection<tblInvoiceItem>? tblInvoiceItem { get; set; }
     }
 }

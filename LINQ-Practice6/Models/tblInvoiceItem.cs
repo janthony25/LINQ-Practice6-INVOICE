@@ -13,6 +13,6 @@ namespace LINQ_Practice6.Models
 
         // FOREIGN KEY to tblInvoice
         public int InvoiceId { get; set; }
-        public tblInvoice tblInvoice { get; set; }
+        public tblInvoice? tblInvoice { get; set; }
     }
 }
